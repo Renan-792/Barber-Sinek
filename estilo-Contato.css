@@ -1,0 +1,302 @@
+:root{
+    --primary:#FFFFFF;
+    --secondary: #453F3C;
+    --terciary: #e4b703;
+    --fundo: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--primary);
+    font-family: cormorant;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(2, 2, 2);
+    font-family: cormorant, "sans-serif";
+    font-weight: 500;
+    color: var(--primary);
+}
+
+section#imagem-fundo {
+    background: linear-gradient(rgba(12, 0, 0, 0.689),rgba(0, 0, 0, 0.421)), url("imagens/tesouras\ de\ barbeiro.jpg");
+    background-size: cover;
+    background-position: center ;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+#container-information {
+    background-color: var(--secondary);
+    height: 30vw;
+    width: 53%;
+    padding: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: double 7px black;
+}
+
+
+#description-contact h2
+ {
+    color: var(--terciary);
+    margin-bottom: 0.7em;
+}
+
+
+#description-contact h2
+ {
+    font-size: 1;
+ }
+
+#email a{
+    color: var(--terciary);
+    text-decoration: none;
+}
+
+.space {
+    margin-bottom: 1.5em;
+}
+/*Fommulario*/
+#form-group {
+    text-transform: uppercase;
+    padding: 2em;
+    max-width: 62%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+    text-align: left;
+}
+
+.form-group label {
+    color: var();
+    margin-bottom: .3em;
+    font-weight: bold ;
+}
+
+.form-group input {
+    padding: 6px 8px;
+    outline: none;
+}
+
+.btn {
+    background: var(--terciary);
+    padding: 7px 9px;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 1;
+    background-color: orangered;
+}
+
+footer  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+footer p {
+   text-align: center;
+   font-weight: 500;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+#network i, a{
+    padding: 2px;
+    text-decoration: none;
+    color: var(--primary);
+}
+    /*MOBILE*/
+@media screen and (max-width:1000px){ 
+
+    #imagem-fundo {
+        background: linear-gradient(rgba(12, 0, 0, 0.689),rgba(0, 0, 0, 0.421)), url("imagens/tesouras\ de\ barbeiro.jpg");
+        background-size: cover;
+        background-position: center ;
+        height: 112vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    
+    #container-information {
+        background-color: var(--secondary);
+        height: 38vh;
+        width: 85%;
+        padding: 8vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: double 7px black;
+    }
+
+    #description-contact h2 {
+        color: var(--terciary);
+        font-size: 1;
+    }
+    
+    #email a{
+        color: var(--terciary);
+        text-decoration: none;
+    }
+    
+    .space {
+        margin-bottom: 1em;
+    }
+    /*Fommulario*/
+    #form-group {
+        text-transform: uppercase;
+        padding: 2em;
+    }
+    
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.8em;
+        text-align: left;
+    }
+    
+    .form-group label {
+        color: var();
+        
+        font-weight: bold ;
+    }
+    
+    .form-group input {
+        padding: 6px 8px;
+        outline: none;
+    }
+    
+    .btn {
+        background: var(--terciary);
+        padding: 7px 9px;
+        text-transform: uppercase;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        opacity: 1;
+        background-color: orangered;
+    }
+    
+    footer  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    footer p {
+       text-align: center;
+       font-weight: 500;
+       padding: 10px;
+       margin-bottom: 10px;
+    }
+    
+    #network i, a{
+        padding: 2px;
+        text-decoration: none;
+        color: var(--primary);
+    }
+}
+
+@media (max-width:681px) {
+    #container-information {
+        background-color: var(--secondary);
+        height: 40rem;
+        width: 89%;
+        padding: 8vh;
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        border: double 7px black;
+    }
+
+    #description-contact h2 {
+        color: var(--terciary);
+        font-size: 1.2em;
+    }
+    
+    #email a{
+        color: var(--terciary);
+        text-decoration: none;
+    }
+    
+    .space {
+        margin-bottom: .5em;
+    }
+    /*Fommulario*/
+    #form-group {
+        text-transform: uppercase;
+        padding: 1em;
+    }
+    
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.8em;
+        text-align: left;
+    }
+    
+    .form-group label {
+        color: var();
+        
+        font-weight: bold ;
+    }
+    
+    .form-group input {
+        padding: 6px 8px;
+        outline: none;
+    }
+    
+    .btn {
+        background: var(--terciary);
+        padding: 7px 9px;
+        text-transform: uppercase;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        opacity: 1;
+        background-color: orangered;
+    }
+    
+    footer  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    footer p {
+       text-align: center;
+       font-weight: 500;
+       padding: 10px;
+       margin-bottom: 10px;
+    }
+    
+    #network i, a{
+        padding: 2px;
+        text-decoration: none;
+        color: var(--primary);
+    }
+}

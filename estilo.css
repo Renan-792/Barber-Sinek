@@ -1,0 +1,317 @@
+:root{
+    --primary:#FFFFFF;
+    --secondary: #453F3C;
+    --terciary: #e4b703;
+    --fundo: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--primary);
+    font-family: cormorant;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+#imagem-fundo {
+    background:linear-gradient(rgba(0, 0, 0, 0.703),rgba(0, 0, 0, 0.874)) ,url('imagens/pexels-thgusstavo-santana-1813272.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 15px;
+}
+
+.navegation a {
+    color: var(--terciary);
+    text-decoration: none;
+
+    margin: 5px;  
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+
+.menu a{
+    display: block;
+        font-size: 16px;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.menu a:hover{
+    background: var(--secondary);
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.label-menu,
+.checkbox {
+    display: none;
+}
+
+
+.titulos {
+    margin-bottom: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+}
+
+.titulo-principal  {
+    width: auto;
+    height: auto;
+    margin: 3vh;
+    padding: 5vh;
+
+}
+
+.titulo-principal h3 {
+    font-weight: 500;
+    font-size: 3.5em;
+}
+
+.titulo-principal h4 {
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.botao-principal  {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-principal button{
+    background-color: #e4b703;
+    margin: auto;
+    padding: 6px 22px;
+    border: double 4px;
+
+    font-size: medium;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+
+footer  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+footer p {
+   text-align: center;
+   font-weight: 500;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+#network i, a{
+    padding: 2px 0px 20px;
+    text-decoration: none;
+}
+/*MOBILE*/
+
+@media  (max-width: 600px) {
+    
+    .navegation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        margin: 15px;
+    }
+    
+    .navegation a {
+        color: var(--terciary);
+        text-decoration: none;
+        margin: 5px 0px 0px 0px;  
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 6.6875rem;
+        left: 0;
+        background-color: var(--secondary);
+        text-align: center;
+        width: 100%;
+        height: 0;        z-index:1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .menu a{
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+
+    }
+
+    .label-menu {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--primary);
+        padding-block: 1rem ;
+        cursor: pointer;
+    }
+
+    .menu li {
+        padding: 10px 0px 5px ;
+    }
+
+    .hamburguer {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburguer::before,
+    .hamburguer::after{
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .checkbox:checked ~ .menu {
+        height: calc( 32vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .checkbox:checked ~ .label-menu .hamburguer {
+        border-top-color: transparent;
+    }
+
+    .checkbox:checked ~ .label-menu .hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    .checkbox:checked ~ .label-menu .hamburguer::after {
+        transform: rotate(135deg);
+    }
+    .titulos {
+        margin-bottom: 10px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+        
+    }
+    
+    .titulo-principal  {
+        width: auto;
+        height: auto;
+        padding: 5vh;
+    
+    }
+    
+    .titulo-principal h3 {
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+    
+    .titulo-principal h4 {
+        font-weight: 500;
+        font-size: .9em;
+        padding: 5px;
+    }
+    
+    .botao-principal  {
+        display: flex;
+        margin: 12px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .botao-principal button{
+        background-color: #e4b703;
+        margin: auto;
+        padding: 4px 10px;
+        border: double 4px;
+    
+        font-size: .6em;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+    }
+    
+    footer {
+        display: flex;
+        padding: 2.4vh;
+        justify-content: center;
+        justify-items: center;
+        
+        align-items: center;
+        font-size: smaller;
+        font-weight: 100;
+    }
+    
+    footer  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    footer p {
+       text-align: center;
+       font-weight: 500;
+       margin-bottom: 10px;
+    }
+
+    #network i, a{
+        padding: 2px;
+        text-decoration: none;
+    }
+}

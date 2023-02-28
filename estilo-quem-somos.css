@@ -185,7 +185,7 @@ footer p {
     }
 
     .checkbox:checked ~ .menu {
-        height: calc( 32vh - 4.6875rem);
+        height: calc( 47vh - 4.6875rem);
         visibility: visible;
         overflow-y: auto;
     }

@@ -261,12 +261,17 @@ footer p {
         padding: 5px;
     }
     
-    /*.botao-principal  {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }*/
+    .btn-principal {
+        background: var(--terciary);
+        margin: 12px;
+        padding: 6px 20px;
+        text-transform: uppercase;
+        color: black;
+        font-size: 8px;
+        border: double 5px;
+        cursor: pointer;
+    }
+    
     
    
 

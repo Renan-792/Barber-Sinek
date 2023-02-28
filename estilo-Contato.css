@@ -186,14 +186,16 @@ footer p {
         background: var(--terciary);
         padding: 7px 9px;
         text-transform: uppercase;
-        border: none;
+        border: double 5px;
+        color: black;
         width: 100%;
         cursor: pointer;
     }
     
     .btn:hover {
         opacity: 1;
-        background-color: orangered;
+        background-color: var(--secondary);
+        color: var(--primary);
     }
     
     footer  {

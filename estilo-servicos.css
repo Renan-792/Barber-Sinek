@@ -42,10 +42,10 @@ body {
     margin: 5px;  
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+#logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
 
 .menu {
     list-style: none;
@@ -235,6 +235,11 @@ td{
         text-decoration: none;
         margin: 5px 0px 0px 0px;  
     }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
 
     .menu {
         display: block;
